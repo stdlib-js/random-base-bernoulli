@@ -53,7 +53,7 @@
     "@stdlib/utils-noop": "^0.1.1"
   },
   "devDependencies": {
-    "@stdlib/array-uint32": "^0.1.0",
+    "@stdlib/array-uint32": "^0.1.1",
     "@stdlib/assert-is-nonnegative-integer": "^0.1.0",
     "@stdlib/assert-is-uint32array": "^0.1.1",
     "@stdlib/bench": "^0.1.0",
