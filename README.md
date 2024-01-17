@@ -440,6 +440,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
+-   <span class="package-name">[`@stdlib/random-array/bernoulli`][@stdlib/random/array/bernoulli]</span><span class="delimiter">: </span><span class="description">create an array containing pseudorandom numbers drawn from a Bernoulli distribution.</span>
+-   <span class="package-name">[`@stdlib/random-iter/bernoulli`][@stdlib/random/iter/bernoulli]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Bernoulli distribution.</span>
+-   <span class="package-name">[`@stdlib/random-streams/bernoulli`][@stdlib/random/streams/bernoulli]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a Bernoulli distribution.</span>
 -   <span class="package-name">[`@stdlib/random-base/binomial`][@stdlib/random/base/binomial]</span><span class="delimiter">: </span><span class="description">binomial distributed pseudorandom numbers.</span>
 
 </section>
@@ -520,6 +523,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
 <!-- <related-links> -->
+
+[@stdlib/random/array/bernoulli]: https://github.com/stdlib-js/random-array-bernoulli
+
+[@stdlib/random/iter/bernoulli]: https://github.com/stdlib-js/random-iter-bernoulli
+
+[@stdlib/random/streams/bernoulli]: https://github.com/stdlib-js/random-streams-bernoulli
 
 [@stdlib/random/base/binomial]: https://github.com/stdlib-js/random-base-binomial
 
