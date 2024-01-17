@@ -35,38 +35,30 @@ limitations under the License.
 
 > [Bernoulli][bernoulli] distributed pseudorandom numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-base-bernoulli
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-bernoulli = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var bernoulli = require( 'path/to/vendor/umd/random-base-bernoulli/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.bernoulli;
-})();
-</script>
+var bernoulli = require( '@stdlib/random-base-bernoulli' );
 ```
 
 #### bernoulli( p )
@@ -406,13 +398,8 @@ var o = rand.toJSON();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var bernoulli = require( '@stdlib/random-base-bernoulli' );
 
 var seed;
 var rand;
@@ -439,11 +426,6 @@ rand = bernoulli.factory( 0.4, {
 for ( i = 0; i < 100; i++ ) {
     console.log( rand() );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -458,6 +440,9 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
+-   <span class="package-name">[`@stdlib/random-array/bernoulli`][@stdlib/random/array/bernoulli]</span><span class="delimiter">: </span><span class="description">create an array containing pseudorandom numbers drawn from a Bernoulli distribution.</span>
+-   <span class="package-name">[`@stdlib/random-iter/bernoulli`][@stdlib/random/iter/bernoulli]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Bernoulli distribution.</span>
+-   <span class="package-name">[`@stdlib/random-streams/bernoulli`][@stdlib/random/streams/bernoulli]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a Bernoulli distribution.</span>
 -   <span class="package-name">[`@stdlib/random-base/binomial`][@stdlib/random/base/binomial]</span><span class="delimiter">: </span><span class="description">binomial distributed pseudorandom numbers.</span>
 
 </section>
@@ -535,11 +520,17 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [bernoulli]: https://en.wikipedia.org/wiki/Bernoulli_distribution
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
 <!-- <related-links> -->
 
-[@stdlib/random/base/binomial]: https://github.com/stdlib-js/random-base-binomial/tree/umd
+[@stdlib/random/array/bernoulli]: https://github.com/stdlib-js/random-array-bernoulli
+
+[@stdlib/random/iter/bernoulli]: https://github.com/stdlib-js/random-iter-bernoulli
+
+[@stdlib/random/streams/bernoulli]: https://github.com/stdlib-js/random-streams-bernoulli
+
+[@stdlib/random/base/binomial]: https://github.com/stdlib-js/random-base-binomial
 
 <!-- </related-links> -->
 
