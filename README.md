@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@esm/index.mjs';
+import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@v0.2.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@v0.2.0-esm/index.mjs';
 ```
 
 #### bernoulli( p )
@@ -394,7 +394,7 @@ var o = rand.toJSON();
 <body>
 <script type="module">
 
-import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@esm/index.mjs';
+import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@v0.2.0-esm/index.mjs';
 
 var seed;
 var rand;
