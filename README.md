@@ -35,32 +35,20 @@ limitations under the License.
 
 > [Bernoulli][bernoulli] distributed pseudorandom numbers.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-base-bernoulli
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var bernoulli = require( '@stdlib/random-base-bernoulli' );
+import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@deno/mod.js';
 ```
 
 #### bernoulli( p )
@@ -134,7 +122,7 @@ The function accepts the following `options`:
 To use a custom PRNG as the underlying source of uniformly distributed pseudorandom numbers, set the `prng` option.
 
 ```javascript
-var minstd = require( '@stdlib/random-base-minstd' );
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@deno/mod.js';
 
 var rand = bernoulli.factory({
     'prng': minstd.normalized
@@ -401,7 +389,7 @@ var o = rand.toJSON();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var bernoulli = require( '@stdlib/random-base-bernoulli' );
+import bernoulli from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-bernoulli@deno/mod.js';
 
 var seed;
 var rand;
@@ -460,7 +448,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -525,17 +513,17 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [bernoulli]: https://en.wikipedia.org/wiki/Bernoulli_distribution
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/deno
 
 <!-- <related-links> -->
 
-[@stdlib/random/array/bernoulli]: https://github.com/stdlib-js/random-array-bernoulli
+[@stdlib/random/array/bernoulli]: https://github.com/stdlib-js/random-array-bernoulli/tree/deno
 
-[@stdlib/random/iter/bernoulli]: https://github.com/stdlib-js/random-iter-bernoulli
+[@stdlib/random/iter/bernoulli]: https://github.com/stdlib-js/random-iter-bernoulli/tree/deno
 
-[@stdlib/random/streams/bernoulli]: https://github.com/stdlib-js/random-streams-bernoulli
+[@stdlib/random/streams/bernoulli]: https://github.com/stdlib-js/random-streams-bernoulli/tree/deno
 
-[@stdlib/random/base/binomial]: https://github.com/stdlib-js/random-base-binomial
+[@stdlib/random/base/binomial]: https://github.com/stdlib-js/random-base-binomial/tree/deno
 
 <!-- </related-links> -->
 
